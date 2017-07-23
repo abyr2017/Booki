@@ -81,8 +81,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>0 462 261 61 61</span></li>
 						</ul>
 						<ul class=" support-right">
-							<li><a href="account.html"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a href="register.html"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
 						</ul>
 						<div class="clearfix"> </div>
 					</div>

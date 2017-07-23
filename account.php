@@ -10,14 +10,17 @@ if($db && isset($_POST['submit']))
 		$id = $row['id'];
 		$_SESSION['signed-in'] = true;
 		$_SESSION['id'] = $id ;
-		header('location: ../page3/index.php');
+		$_SESSION['name'] =  $row['Name'] ;
+
+
+		echo " <script type='text/javascript'>
+		 	alert('Connected');
+		 </script>";
 	} else {
 		echo " <script type='text/javascript'>
 		 	alert('Wrong Name Or Password');
 		 </script>";
 	}
-} else {
-	echo "hi";
 }
  ?>
 <!DOCTYPE html>
@@ -75,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="header-top-in">
 
 						<ul class="support">
-							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>info@example.com</a></li>
+							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i><?php echo $_SESSION['name']; ?></a></li>
 							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>0 462 261 61 61</span></li>
 						</ul>
 						<ul class=" support-right">
