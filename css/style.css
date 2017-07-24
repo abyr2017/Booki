@@ -1,4 +1,4 @@
-/*--A Design by W3layouts 
+/*--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -20,7 +20,7 @@ body a{
 	margin: 0;
 }
 h1,h2,h3,h4,h5,h6,label,p{
-	margin:0;	
+	margin:0;
 }
 /*----*/
 .itemContainer{
@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 .item_add {
 
-}		
+}
 .grid_1 img{
 	margin-bottom:1em;
 }
@@ -76,14 +76,14 @@ h1,h2,h3,h4,h5,h6,label,p{
 	font-size:1em;
 }
 .box_1 p a:hover{
-	color:#ff5d56;
+	color:#000;
 	text-decoration:underline;
 }
 .total {
   display: inline-block;
 }
 .header{
-    background: url(../images/banner.jpg) no-repeat 0px 0px;
+    background: url(../images/book.jpeg) no-repeat 0px 0px;
     width: 100%;
     background-size: cover;
     min-height: 704px;
@@ -93,9 +93,9 @@ h1,h2,h3,h4,h5,h6,label,p{
   min-height: 89px;
 
 }
-.header-top{
+/*.header-top{
 	  background: rgba(255, 93, 86, 0.26);
-}
+}*/
 .header-info {
   padding: 0;
   background: #ffffff;
@@ -144,7 +144,7 @@ ul.support-right li i.tele {
 .header-bottom {
   padding: 1em 0 1em;
 }
-.logo  h1{	
+.logo  h1{
   font-size: 4em;
   font-family: 'Montez', cursive;
   font-weight: 100;
@@ -183,7 +183,7 @@ ul.support-right li i.tele {
 .banner-top{
 		background: rgba(255, 93, 86, 0.2);
 		padding: 1em 3em;
-		
+
 }
 .banner h2{
 	color: #fff;
@@ -307,7 +307,7 @@ width: 50%;
 	padding: 0px;
 	background-color: #fff;
 	clear: left;
-	
+
 }
 h2.resp-accordion {
 	cursor: pointer;
@@ -619,7 +619,7 @@ color: #242424;
   font-size: .97em;
 }
 .grid-product h6 a:hover{
-	color:#000;	
+	color:#000;
 }
 span.price-in{
   font-size: 1.1em;
@@ -767,7 +767,7 @@ ul.social-footer li  i{
 ul.social-footer li  i.down{
 	background-position:-171px -105px;
 }
-ul.social-footer li  i.mes{	
+ul.social-footer li  i.mes{
 	background-position: -196px -105px;
 }
 ul.social-footer li  i.mes-in{
@@ -799,11 +799,11 @@ p.footer-class a:hover{
 	background: none;
 }
 .grid-1{
-	background: none;	
+	background: none;
   padding: 0;
 }
 .back{
-	background: url(../images/product.jpg) no-repeat 0px -54px;
+	background: #191919 no-repeat 0px -54px;
   width: 100%;
   background-size: cover;
   min-height: 100px;
@@ -846,7 +846,7 @@ p.footer-class a:hover{
 .dress{
 	float:right;
 	font-size: 1em;
-	color:#000;	
+	color:#000;
 	padding: 1.5em 0;
 }
 .dress a{
@@ -866,7 +866,7 @@ h3.cate {
   width: 69%;
 	  font-size: 1.5em;
 }
-h3.cate-on {	
+h3.cate-on {
   width: 37%;
 }
 ul.dropdown-menu1 {
@@ -890,7 +890,7 @@ input#amount {
   outline:none;
 }
 a.go {
- 
+
   font-size: 1em;
   background: #ff5d56;
   padding: 0.5em 1em;
@@ -904,7 +904,7 @@ a.go:hover{
    background: none;
   border: 1px solid #000;
   color: #000;
- 
+
 }
 .price-grid {
   padding-bottom: 1em;
@@ -919,7 +919,7 @@ ul.kid-menu{
 	height: auto;
 	padding: 0;
 	list-style: none;
-	margin: 0 0 1.5em 0;	
+	margin: 0 0 1.5em 0;
 }
 .menu > li > a {
 width: 100%;
@@ -934,7 +934,7 @@ width: 100%;
 .menu > li > a:hover{
 	color:#ff5d56;
 }
-.menu ul li a {	
+.menu ul li a {
 	width: 100%;
 	display: inline-block;
 	position: relative;
@@ -942,7 +942,7 @@ width: 100%;
 	margin:0.3em 0;
 	color: #797979;
 	text-decoration:none;
-	
+
 	text-indent: 1.2em;
 }
 .menu ul li a:hover{
@@ -950,7 +950,7 @@ width: 100%;
 }
 ul.kid-menu li{
 	list-style: none;
-	
+
 }
 .sellers {
   padding: 2em 0;
@@ -1114,7 +1114,7 @@ a.add1:hover{
 	background:#ff5d56;
 }
 a.add2{
-	  float: left;	
+	  float: left;
 }
 a.add1 i{
 	background: url(../images/img-sprite.png)no-repeat -260px -106px;
@@ -1200,7 +1200,7 @@ position: absolute;
 .per1{
 	position: relative;
 	  margin: 3em 0 0;
-	    
+
 }
 .six1{
 	position: absolute;
@@ -1214,7 +1214,7 @@ position: absolute;
 .six1 h4{
 	font-size:2.5em;
 	color:#ff5d56;
-font-weight: 100;	
+font-weight: 100;
 }
 .six1 p{
 	font-size:2em;
@@ -1245,7 +1245,7 @@ font-weight: 100;
 .six2 h4{
 	font-size:2.5em;
 	color:#ff5d56;
-font-weight: 100;	
+font-weight: 100;
 }
 .six2 p{
 	font-size:2em;
@@ -1275,7 +1275,7 @@ font-weight: 100;
 .six3 h4{
 	font-size:2.5em;
 	color:#ff5d56;
-font-weight: 100;	
+font-weight: 100;
 }
 .six3 p{
 	font-size:2em;
@@ -1305,7 +1305,7 @@ font-weight: 100;
 .six4 h4{
 	font-size:2.5em;
 	color:#ff5d56;
-font-weight: 100;	
+font-weight: 100;
 }
 .six4 p{
 	font-size:2em;
@@ -1325,7 +1325,7 @@ ul.start {
 }
 ul.start li {
 	display: inline-block;
-    
+
 }
 .product-price1 {
   padding-left: 55px;
@@ -1344,14 +1344,14 @@ ul.start li.arrow a, ul.start li span {
 }
 ul.start li span,ul.start li.arrow a:hover{
 	background: #000;
-	
+
 }
 ul.start li a i{
 	background: url(../images/img-sprite.png)no-repeat -121px -159px;
   width: 40px;
   height: 40px;
 	display:inline-block;
-	vertical-align:middle;	
+	vertical-align:middle;
 }
 ul.start li a i.next {
 	background-position:-168px -159px;
@@ -1524,7 +1524,7 @@ ul.tag-men li{
 	color:#000;
 	 margin: 0.3em 0;
 	font-weight:300;
-	font-size:0.9em; 
+	font-size:0.9em;
 }
 ul.tag-men li span.women1{
 	  margin-left: 9em;
@@ -1541,7 +1541,7 @@ a.add-cart {
 }
 a.add-cart:hover {
   background:#575757;
-  
+
 }
 h3.real{
   color: #444444;
@@ -1605,14 +1605,14 @@ h3.real{
   -webkit-animation: cd-fade-in 0.5s;
   -moz-animation: cd-fade-in 0.5s;
   animation: cd-fade-in 0.5s;
-  
+
 }
 .cd-tabs.is-ended {
   margin: 0em 0 1em;
   padding: 0 1em;
 }
 .facts{
-	
+
 padding: 1em 0;
 }
 .facts p{
@@ -1681,7 +1681,7 @@ a.add-re:hover{
 }
 .comments-top-top {
 	margin: 2em 0;
-	
+
 }
 /*--contact--*/
 .contact-top h3,.contact-top-in h3{
@@ -1720,7 +1720,7 @@ a.add-re:hover{
 	font-size:1.1em;
 	border:none;
 	width:20%;
-	outline:none;	
+	outline:none;
 	font-weight: 600;
 	padding:0.5em 1em;
 	transition: 0.5s all;
@@ -1733,7 +1733,7 @@ a.add-re:hover{
 	background:none;
 	border: 1px solid #000;
 	color:#000;
-	
+
 }
 .contact-top-in p{
 	font-size: 1em;
@@ -1806,7 +1806,7 @@ a.add-re:hover{
 	width: 100%;
 	font-size:0.9em;
 	padding:10px;
-		
+
 }
 .login-right input[type="text"]:hover {
 		border: 1px solid #ff5d56;
@@ -1869,7 +1869,7 @@ a.forgot {
 	font-size:1.1em;
 	border:none;
 	width:20%;
-	outline:none;	
+	outline:none;
 	font-weight: 600;
 	padding:0.5em 1em;
 	transition: 0.5s all;
@@ -1881,7 +1881,7 @@ a.forgot {
 .register input[type="submit"]:hover{
 	background:none;
 	border: 1px solid #000;
-	color:#000;	
+	color:#000;
 }
 .register form div {
 	padding: 0 0 1em 0;
@@ -2040,7 +2040,7 @@ ul.unit li {
 	display:inline-block;
 	color:#fff;
 	font-size:1.2em;
-	 
+
 	  text-align:center;
 }
 
@@ -2065,10 +2065,10 @@ padding:1em;
 }
  ul.cart-header li, ul.cart-header1 li, ul.cart-header2 li, ul.cart-header3 li{
 	display:inline-block;
-	
+
 	 width:20%;
 	  float:left;
-	 
+
 }
 ul.cart-header li span,ul.cart-header1 li span,ul.cart-header2 li span,ul.cart-header3 li span{
   margin: 2.3em 0 0;
@@ -2186,14 +2186,14 @@ li.ring-in img{
 	  padding: 11em 0 0;
 	}
 	.six-per {
-	 
+
 	  padding: 1em 1em 0;
 	}
 	.six-per span {
 	  font-size: 6em;
 	}
 	.col-on h4 {
-	  
+
 	  font-size: 2em;
 	}
 	.on-para p {
@@ -2490,7 +2490,7 @@ li.ring-in img{
 	  margin: 0 auto;
 	}
 	.six-per {
-	  padding: 7em 1em 0; 
+	  padding: 7em 1em 0;
 	  width: 56.8%;
 	  left: 21.6%;
 	}
@@ -2551,7 +2551,7 @@ li.ring-in img{
 	  margin-bottom: 0;
 	}
 	/*--product--*/
-	
+
 	.col-md-4.chain-grid{
 	float:left;
 	width:33.3%;
@@ -2671,7 +2671,7 @@ li.ring-in img{
 	}
 	.header {
 	    min-height: 520px;
-	    
+
 	}
 	.resp-tabs-list {
 	  width: 86%;
@@ -2757,7 +2757,7 @@ li.ring-in img{
 	  margin: 0 auto;
 	}
 	.six-per {
-	  padding: 7em 1em 0; 
+	  padding: 7em 1em 0;
 	  width: 56.8%;
 	  left: 21.6%;
 	}
@@ -2818,7 +2818,7 @@ li.ring-in img{
 	  margin-bottom: 0;
 	}
 	/*--product--*/
-	
+
 	.col-md-4.chain-grid{
 	float:left;
 	width:33.3%;
@@ -3160,7 +3160,7 @@ li.ring-in img{
 	  font-size: 0.9em;
 	  margin-top: 3em;
 	}
-	ul.unit li span { 
+	ul.unit li span {
 	  font-size: 1em;
 	}
 	.close1, .close2 {
@@ -3198,7 +3198,7 @@ li.ring-in img{
 	  width: 58%;
 	    margin-top: 0em;
 	}
-	
+
 	.search-in {
 	  right: -1px;
 	}
@@ -3229,7 +3229,7 @@ li.ring-in img{
 	 ul.support-right li {
 	  margin: 0.3em 0.7em 0.1em;
 	}
-	
+
 	.logo h1 {
 	  font-size: 3em;
 	}
@@ -3405,7 +3405,7 @@ li.ring-in img{
 	.van-in span {
 	  font-size: 3.3em;
 	}
-	
+
 	.fit p {
 	  font-size: 1.1em;
 	  margin-top: 0.2em;
@@ -3614,7 +3614,7 @@ li.ring-in img{
 	.banner h2 {
 	  font-size: 1.2em;
 	}
-	
+
 	.banner	p {
 	  font-size: 1.1em;
 	  margin: 0;
@@ -3732,7 +3732,7 @@ li.ring-in img{
 	.per {
 	  padding: 0;
 	}
-	
+
 	.six h4 {
 	  font-size: 2em;
 	}
@@ -4095,7 +4095,7 @@ li.ring-in img{
 	/*--single--*/
 	ul#etalage {
 		width: 250px !important;
-		
+
 	}
 	li.etalage_small_thumbs {
 	  width: 250px !important;
