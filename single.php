@@ -1,4 +1,8 @@
+<?php
+  session_start();
+    $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
 
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,11 +62,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="header-info">
 			<div class="container">
 					<div class="header-top-in">
+						<ul class="support">
+							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i><?php echo $_SESSION['name']; ?></a></li>
 
+						</ul>
 
 						<ul class=" support-right">
-							<li><a href="account.html"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a href="register.html"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
 						</ul>
 						<div class="clearfix"> </div>
 					</div>
