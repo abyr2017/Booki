@@ -80,152 +80,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="index.html">I-<span>wear</span></a></h1>
+					<h1><a href="index.html"><img src="images/logo-01.png" alt=""></a></h1>
 				</div>
 
 
 
 
 			<div class="top-nav">
-				<ul class="memenu skyblue"><li><a href="index.html">Home</a></li>
-					<li  class="active" class="grid"><a href="#">Men</a>
-						<div class="mepanel">
-							<div class="row">
-								<div class="col1 me-one">
-									<h4>Shop</h4>
-									<ul>
-										<li><a href="about.html">About</a></li>
-										<li><a href="product.html">Men</a></li>
-										<li><a href="product.html">Women</a></li>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Kids</a></li>
-										<li><a href="product.html">login</a></li>
-										<li><a href="product.html">Brands</a></li>
-										<li><a href="product.html">My Shopping Bag</a></li>
-									</ul>
-								</div>
-								<div class="col1 me-one">
-									<h4>Style Zone</h4>
-									<ul>
-										<li><a href="product.html">Men</a></li>
-										<li><a href="product.html">Women</a></li>
-										<li><a href="product.html">Brands</a></li>
-										<li><a href="product.html">Kids</a></li>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Style Videos</a></li>
-									</ul>
-								</div>
-								<div class="col1 me-one">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="product.html">Levis</a></li>
-										<li><a href="product.html">Persol</a></li>
-										<li><a href="product.html">Nike</a></li>
-										<li><a href="product.html">Edwin</a></li>
-										<li><a href="product.html">New Balance</a></li>
-										<li><a href="product.html">Jack & Jones</a></li>
-										<li><a href="product.html">Paul Smith</a></li>
-										<li><a href="product.html">Ray-Ban</a></li>
-										<li><a href="product.html">Wood Wood</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="grid"><a href="#">Women</a>
-						<div class="mepanel">
-							<div class="row">
-								<div class="col1 me-one">
-									<h4>Shop</h4>
-									<ul>
-										<li><a href="about.html">About</a></li>
-										<li><a href="product.html">Men</a></li>
-										<li><a href="product.html">Women</a></li>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Kids</a></li>
-										<li><a href="product.html">login</a></li>
-										<li><a href="product.html">Brands</a></li>
-										<li><a href="product.html">My Shopping Bag</a></li>
-									</ul>
-								</div>
-								<div class="col1 me-one">
-									<h4>Style Zone</h4>
-									<ul>
-										<li><a href="product.html">Men</a></li>
-										<li><a href="product.html">Women</a></li>
-										<li><a href="product.html">Brands</a></li>
-										<li><a href="product.html">Kids</a></li>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Style Videos</a></li>
-									</ul>
-								</div>
-								<div class="col1 me-one">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="product.html">Levis</a></li>
-										<li><a href="product.html">Persol</a></li>
-										<li><a href="product.html">Nike</a></li>
-										<li><a href="product.html">Edwin</a></li>
-										<li><a href="product.html">New Balance</a></li>
-										<li><a href="product.html">Jack & Jones</a></li>
-										<li><a href="product.html">Paul Smith</a></li>
-										<li><a href="product.html">Ray-Ban</a></li>
-										<li><a href="product.html">Wood Wood</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="grid"><a href="#">Kids</a>
-						<div class="mepanel">
-							<div class="row">
-								<div class="col1 me-one">
-									<h4>Shop</h4>
-									<ul>
-										<li><a href="about.html">About</a></li>
-										<li><a href="product.html">Men</a></li>
-										<li><a href="product.html">Women</a></li>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Kids</a></li>
-										<li><a href="product.html">login</a></li>
-										<li><a href="product.html">Brands</a></li>
-										<li><a href="product.html">My Shopping Bag</a></li>
-									</ul>
-								</div>
-								<div class="col1 me-one">
-									<h4>Style Zone</h4>
-									<ul>
-										<li><a href="product.html">Men</a></li>
-										<li><a href="product.html">Women</a></li>
-										<li><a href="product.html">Brands</a></li>
-										<li><a href="product.html">Kids</a></li>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Style Videos</a></li>
-									</ul>
-								</div>
-								<div class="col1 me-one">
-									<h4>Popular Brands</h4>
-									<ul>
-										<li><a href="product.html">Levis</a></li>
-										<li><a href="product.html">Persol</a></li>
-										<li><a href="product.html">Nike</a></li>
-										<li><a href="product.html">Edwin</a></li>
-										<li><a href="product.html">New Balance</a></li>
-										<li><a href="product.html">Jack & Jones</a></li>
-										<li><a href="product.html">Paul Smith</a></li>
-										<li><a href="product.html">Ray-Ban</a></li>
-										<li><a href="product.html">Wood Wood</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="grid"><a href="typography.html">Typo</a>
-
-					</li>
-					<li class="grid"><a href="contact.html">Contact</a>
-
-					</li>
+				<ul class="memenu skyblue">
+					<li class="active"><a href="index.html" >BookShelf</a></li>
+					<li class="grid"><a href="contact.html">Add a book</a></li>
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
@@ -234,7 +98,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="checkout.html">
 						<h3> <div class="total">
 							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
-							<img src="images/cart2-2.png" alt=""/></h3>
+							<img src="images/cart.png" alt=""/></h3>
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
@@ -258,90 +122,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="product">
 			<div class="container">
 				<div class="col-md-3 product-price">
-					  <div class="price-grid">
-					    <div class="of-left">
-						<h3 class="cate cate-on"></h3>
-					</div>
-	  <ul class="dropdown-menu1">
-            <li><a href="#">
-                <p>
-                      <label for="amount" class="amount">Range:</label>
-                     <input type="text" id="amount" style="border: 0; color: #ff5d56; font-weight: bold;" />
 
-						  </p>
-
-                   <div id="slider-range"></div>
-                </a></li>
-
-          </ul>
-		  <a  class="go" href="single.html">GO</a>
-		  	<div class="clearfix"> </div>
-<!---->
- <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-
-      <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
-
-<script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
- $( "#slider-range" ).slider({
-            range: true,
-            min: 0,
-            max: 500,
-            values: [ 100, 400 ],
-            slide: function( event, ui ) {  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-            }
- });
-$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
-});//]]>
-
-</script>
-
-
-<!---->
-		</div>
 				<div class=" rsidebar span_1_of_left">
 					<div class="of-left">
 						<h3 class="cate">CATEGORIES</h3>
 					</div>
 		 <ul class="menu">
-		<li class="item1"><a href="#">Men </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails </a></li>
-			</ul>
-		</li>
-		<li class="item2"><a href="#">Women </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails </a></li>
-			</ul>
-		</li>
-		<li class="item3"><a href="#">Kids</a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails</a></li>
-			</ul>
-		</li>
-		<li class="item4"><a href="#">Accesories</a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails</a></li>
-			</ul>
-		</li>
-
-		<li class="item4"><a href="#">Shoes</a>
-			<ul class="cute">
-				<li class="subitem1"><a href="product.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="product.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="product.html">Automatic Fails </a></li>
-			</ul>
-		</li>
-	</ul>
+		<li class="item1"><a href="#">Men </a></li>
+		<li class="item2"><a href="#">Women </a></li>
+		<li class="item3"><a href="#">Kids</a></li>
+		<li class="item4"><a href="#">Accesories</a></li>
+		<li class="item4"><a href="#">Shoes</a></li>
+		</ul>
 					</div>
 				<!--initiate accordion-->
 		<script type="text/javascript">
@@ -363,102 +155,8 @@ $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + 
 
 			});
 		</script>
-<!---->
-	<div class="product-middle">
 
-					<div class="fit-top">
-						<h6 class="shop-top">LOREM IPSUM</h6>
-						<a href="single.html" class="shop-now">SHOP NOW</a>
-<div class="clearfix"> </div>
-	</div>
-				</div>
-						<div class="sellers">
-							<div class="of-left-in">
-								<h3 class="tag">TAGS</h3>
-							</div>
-								<div class="tags">
-									<ul>
-										<li><a href="#">design</a></li>
-										<li><a href="#">fashion</a></li>
-										<li><a href="#">lorem</a></li>
-										<li><a href="#">dress</a></li>
-										<li><a href="#">fashion</a></li>
-										<li><a href="#">dress</a></li>
-										<li><a href="#">design</a></li>
-										<li><a href="#">dress</a></li>
-										<li><a href="#">design</a></li>
-										<li><a href="#">fashion</a></li>
-										<li><a href="#">lorem</a></li>
-										<li><a href="#">dress</a></li>
 
-										<div class="clearfix"> </div>
-									</ul>
-
-								</div>
-
-		</div>
-				<!---->
-				<div class="product-bottom">
-					<div class="of-left-in">
-								<h3 class="best">BEST SELLERS</h3>
-							</div>
-					<div class="product-go">
-						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="images/f1.jpg" alt=""></a>
-
-								</div>
-							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html" >Lorem ipsum dolor sit
-amet consectetuer  </a></h6>
-
-								<span class=" price-in1"> $40.00</span>
-							</div>
-
-							<div class="clearfix"> </div>
-							</div>
-							<div class="product-go">
-						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="images/f2.jpg" alt=""></a>
-
-								</div>
-							<div class="fashion-grid1">
-								<h6 class="best2"><a href="single.html" >Lorem ipsum dolor sit
-amet consectetuer </a></h6>
-
-								<span class=" price-in1"> $40.00</span>
-							</div>
-
-							<div class="clearfix"> </div>
-							</div>
-							<div class="product-go">
-						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="images/f3.jpg" alt=""></a>
-
-								</div>
-							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html" >Lorem ipsum dolor sit
-amet consectetuer </a></h6>
-								<ul class="star-footer">
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-								</ul>
-								<span class=" price-in1"><small>$70.00</small> $40.00</span>
-							</div>
-
-							<div class="clearfix"> </div>
-							</div>
-				</div>
-<div class=" per1">
-				<a href="single.html" ><img class="img-responsive" src="images/n7.jpg" alt="">
-				<div class="six1">
-					<h4>DISCOUNT</h4>
-					<p>Up to</p>
-					<span>60%</span>
-				</div></a>
-			</div>
 				</div>
 
 
@@ -587,21 +285,7 @@ amet consectetuer </a></h6>
 <!---->
 <div class="footer">
 		<div class="container">
-			<div class="col-md-4 footer-top">
-				<h3>Quick Contact</h3>
-				<form>
-						<input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
 
-						<input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
-
-						<input type="text" value="ENTER YOUR PHONE" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
-
-						<textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
-
-							<input type="submit" value="SEND MESSAGE" >
-
-					</form>
-			</div>
 			<div class="col-md-4 footer-middle">
 				<h3>Top Rated Products</h3>
 					<div class="product-go">
@@ -682,7 +366,7 @@ amet consectetuer </a></h6>
 					</div>
 			</div>
 			<div class="clearfix"> </div>
-			<p class="footer-class">Copyrights © 2015 I Wear. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I</p>
 		</div>
 	</div>
 				 <!---->

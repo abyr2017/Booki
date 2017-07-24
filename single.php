@@ -104,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="top-nav">
 				<ul class="memenu skyblue">
-					<li class="active"><a href="index.html">Book Shelf</a></li>
+					<li class="active"><a href="index.html">BookShelf</a></li>
 					<li ><a href="#">Profile</a></li>
 				</ul>
 				<div class="clearfix"> </div>
