@@ -9,6 +9,7 @@
 <html>
 <head>
 <title> Single :: w3layouts</title>
+<link href="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoadCss&layout=layout1" type="text/css" rel="stylesheet" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -225,6 +226,7 @@ $(window).load(function() {
                       echo '<div class="bookimg">'. $row["owner"] .'</div>' ;
                     ?>
 									</ul> <br>
+                  <script type="text/javascript" src="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoad&id=2&instance_id=0&layout=layout1"></script>
 
 								</div>
 							<div class="clearfix"> </div>
