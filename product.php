@@ -284,74 +284,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/simpleCart.min.js"> </script>
 <!---->
 <div class="footer">
-		<div class="container">
-
-			<div class="col-md-4 footer-middle">
-				<h3>Top Rated Products</h3>
-					<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="images/f1.jpg" alt="">
-									<p>SALE</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-								<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="images/f2.jpg" alt="">
-									<p class="new1">NEW</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-								<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="images/f3.jpg" alt="">
-									<p class="new1">NEW</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
+		<div class="container ">
+			<div class="col-md-4">
 
 			</div>
-			<div class="col-md-4 footer-bottom">
-				<h3>Get In Touch</h3>
-				<div class="logo-footer">
-					<ul class="social">
+
+			<div class="col-md-4 footer-bottom text-center">
+				<h3 class="text-center">Get In Touch</h3>
+				<div class="logo-footer text-center">
+					<ul class="social text-center">
 		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="rss"></i></a></li>
 		                    <li><a href="#"><i class="twitter"></i></a></li>
-		                    <li><a href="#"><i class="dribble"></i></a></li>
+
 		                    <div class="clearfix"></div>
 		                </ul>
 					<div class="clearfix"> </div>
