@@ -1,11 +1,12 @@
 <?php
 session_start();
+$db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
 if ($_POST) {
-  $db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
+  
   $name=$_POST['name'];
   $pass=$_POST['pass'];
   $carte=$_POST['carte'];
-  $result = $db->query("INSERT INTO Users (`Name`,`Pass`,`num carte`) VALUES ('$name','$pass','$carte')");
+  $result= $db->query("INSERT INTO Users (`Name`,`Pass`,`num carte`) VALUES ('$name','$pass','$carte')");
 
   $success = FALSE;
   if ($result) $success = TRUE;
@@ -83,13 +84,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="dropdown">
 
             <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
-
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+						<?php 
+							$row = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
+							
+							echo"<div class='dropdown-content'>
+										<a href='#'>" . $row['Books given'] . " books given </a>
+										<a href='#'>" . $row['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $row['num carte'] . "</a>
+										</div>
+								 ";
+						?>
               </div>
-            </div>
             <?php endif ?>
           </ul>
           <ul class=" support-right">
