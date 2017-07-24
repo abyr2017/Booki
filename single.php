@@ -239,47 +239,21 @@ $(window).load(function() {
 					<div class="cd-tabs">
 			<nav>
 				<ul class="cd-tabs-navigation">
-					<li><a data-content="fashion"  href="#0">Description </a></li>
-					<li><a data-content="television" href="#0" class="selected ">Reviews (1)</a></li>
+					<li><a data-content="fashion"  href="#0" class="selected ">Description </a></li>
+
 
 				</ul>
 			</nav>
 	<ul class="cd-tabs-content">
-		<li data-content="fashion" >
+		<li data-content="fashion" class="selected" >
 		<div class="facts">
-									  <p > There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined </p>
-										<ul>
-											<li>Research</li>
-											<li>Design and Development</li>
-											<li>Porting and Optimization</li>
-											<li>System integration</li>
-											<li>Verification, Validation and Testing</li>
-											<li>Maintenance and Support</li>
-										</ul>
-							        </div>
+      <?php
+        echo '<div class="bookimg">'. $row["Description"] .'</div>' ;
+      ?>
+		</div>
 
 </li>
-<li data-content="television" class="selected">
-	<div class="comments-top-top">
-				<div class="top-comment-left">
-					<img class="img-responsive" src="images/co.png" alt="">
-				</div>
-				<div class="top-comment-right">
-					<h6><a href="#">Hendri</a> - September 3, 2014</h6>
-					<ul class="star-footer">
-										<li><a href="#"><i> </i></a></li>
-										<li><a href="#"><i> </i></a></li>
-										<li><a href="#"><i> </i></a></li>
-										<li><a href="#"><i> </i></a></li>
-										<li><a href="#"><i> </i></a></li>
-									</ul>
-									<p>Wow nice!</p>
-				</div>
-				<div class="clearfix"> </div>
-				<a class="add-re" href="#">ADD REVIEW</a>
-			</div>
 
-</li>
 <div class="clearfix"></div>
 	</ul>
 </div>
