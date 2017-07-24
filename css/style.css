@@ -104,6 +104,7 @@ h1,h2,h3,h4,h5,h6,label,p{
   border-top: 3px solid#D2D2D2;
    padding: 1em 0 .7em;
 }
+
 ul.support {
   float: left;
 }
@@ -1447,7 +1448,7 @@ width: 29%;
     float:left;
 }
 .bottom-grid1{
-background: url(../images/books.jpeg) center ;
+background: url(../images/product2.jpg) center ;
   width: 100%;
   min-height: 311px;
   display: block;
