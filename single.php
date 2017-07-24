@@ -62,11 +62,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
-		<div class="header-info">
-			<div class="container">
-					<div class="header-top-in">
-						<ul class="support">
-              <?php if (isset($_SESSION['name'])):?>
+<div class="header-info">
+  <div class="container">
+      <div class="header-top-in">
+
+        <ul class="support">
+            <?php if (isset($_SESSION['name'])):?>
           <div class="dropdown">
 
           <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
@@ -78,19 +79,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
           </div>
           <?php endif ?>
-
-
-
-						</ul>
-
-						<ul class=" support-right">
-							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
-						</ul>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
+        </ul>
+        <ul class=" support-right">
+          <?php if (isset($_SESSION['name'])): ?>
+          <li><a href="logout.php"><i class="glyphicon glyphicon-user" class="men"> </i>LogOut</a></li>
+        <?php else: ?>
+            <li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+          <?php endif; ?>
+          <li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+        </ul>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
 <div class="header header5">
 	<div class="header-top">
 
