@@ -1,7 +1,9 @@
 <?php
   session_start();
     $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
-
+    $id = $_GET['id'];
+    $result = $db->query("SELECT * FROM BookShelf where id=$id");
+    $row = $result->fetch_array();
     ?>
 <!DOCTYPE html>
 <html>
@@ -61,32 +63,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--header-->
 		<div class="header-info">
 			<div class="container">
-        <div class="header-top-in">
-
-          <ul class="support">
+					<div class="header-top-in">
+						<ul class="support">
               <?php if (isset($_SESSION['name'])):?>
-            <div class="dropdown">
+          <div class="dropdown">
 
-            <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
+          <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
-            <?php endif ?>
-          </ul>
-          <ul class=" support-right">
-            <?php if (isset($_SESSION['name'])): ?>
-            <li><a href="logout.php"><i class="glyphicon glyphicon-user" class="men"> </i>LogOut</a></li>
-          <?php else: ?>
-              <li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-            <?php endif; ?>
-            <li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
-          </ul>
-          <div class="clearfix"> </div>
-        </div>
+          </div>
+          <?php endif ?>
+
+
+
+						</ul>
+
+						<ul class=" support-right">
+							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
 				</div>
 			</div>
 <div class="header header5">
@@ -175,25 +176,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!---->
 				<div class="col-md-9 product-price1">
 				<div class="col-md-5 single-top">
+          <?php
+            echo '<div class="bookimg">'. $row["image"] .'</div>' ;
 
+          ?>
 
 
 
 						<div class="flexslider">
-							<ul class="slides">
-								<li data-thumb="images/si.jpg">
-									<img src="images/si3.jpeg" />
-								</li>
-								<li data-thumb="images/s2.jpg">
-									<img src="images/si1.jpeg" />
-								</li>
-								<li data-thumb="images/s3.jpeg">
-									<img src="images/si2.jpeg" />
-								</li>
-								<li data-thumb="images/s1.jpg">
-									<img src="images/s12.jpeg" />
-								</li>
-							</ul>
+
 						</div>
 <!-- FlexSlider -->
   <script defer src="js/jquery.flexslider.js"></script>
@@ -211,11 +202,28 @@ $(window).load(function() {
 			</div>
 					<div class="col-md-7 single-top-in simpleCart_shelfItem">
 						<div class="single-para ">
-						<h4>Gucci</h4>
+						<h4><?php
+              echo '<div class="bookimg">'. $row["name"] .'</div>' ;
+                ?>
+            </h4>
 							<div class="star-on">
 
 								<div class="review">
-									<a href="#"> 1 customer review </a>
+									<ul> Author:
+                    <?php
+                      echo '<div class="bookimg">'. $row["auteur"] .'</div>' ;
+                    ?>
+									</ul> <br>
+                  <ul> Editor:
+                    <?php
+                      echo '<div class="bookimg">'. $row["editeur"] .'</div>' ;
+                    ?>
+									</ul> <br>
+                  <ul> owner:
+                    <?php
+                      echo '<div class="bookimg">'. $row["owner"] .'</div>' ;
+                    ?>
+									</ul> <br>
 
 								</div>
 							<div class="clearfix"> </div>
