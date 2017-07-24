@@ -492,6 +492,7 @@ amet consectetuer </a></h6>
 	   		     		</a>
 	   		     	</div>
 							<?php
+								die(mysqli_error($this->db_link));	
                 while($row = mysqli_fetch_array($result)) {
                   echo "<div class='grid-chain-bottom'>" .
                           "<a href='single.html'>" . $row['name'] ."</a>" .
