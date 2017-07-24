@@ -1,7 +1,17 @@
 <?php
 session_start();
-$db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
-    ?>
+$db= mysqli_connect('35.160.127.179','fake','true7102','fake');
+if($db && isset($_POST['submit']))
+{
+	$result=$db->query(" insert into BookShelf ( name , Description , auteur , editeur , owner , client ) values ( '{$_POST['name']}' , $'{_POST['Description']}' , '{$_POST['auteur']}' , '{$_SESSION['id']}' )");
+	$tmp_name = $_FILES['photo']['tmp_name'];
+    $file_name = time() . ".png";
+    if (move_uploaded_file($tmp_name, $file_name)) {
+      $query = "INSERT INTO BookShelf (image) VALUE ('$file_name')";
+      mysqli_query($db, $query);
+	}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -264,27 +274,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class=" contact-top">
 					<h3>Want to add a book to our bookshelf ?</h3>
-						<div>
-							<span>Your Name </span>
-							<input type="text" value="" >
-						</div>
-						<div>
+						
+							<?php if (isset($_SESSION['name'])):?>
+							
+						<form method ="POST"  action="contact.php" enctype="multipart/form-data">
+							<div>
 							<span>book name </span>
-							<input type="text" value="" >
+							<input type="text" value="" name="name" >
 						</div>
 						<div>
 							<span>description </span>
-							<input type="text" value="" placeholder="tell us about your book" >
+							<textarea type="text" value="" name="Description" placeholder="tell us about your book"> </textarea>
 						</div>
 						<div>
 							<span>Author</span>
-							<input type="text" value="" >
+							<input type="text" value="" name="auteur" >
 						</div>
 						<div>
-							<span>Your Message</span>
-							<textarea> </textarea>
+							<span>Picture</span>
+							<input type="file" name="image" value="upload">
+
 						</div>
-						<input type="submit" value="SEND" >
+						
+						<input type="submit" value="SEND" method="POST" >
+						</form>
+						<?php endif ?>
+						<p> <a href ="account.php">Log in</a> or <a href="register.php">Create an account </a></p>
 				</div>
 
 		</div>
