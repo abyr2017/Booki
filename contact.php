@@ -2,13 +2,11 @@
 session_start();
 $db= mysqli_connect('35.160.127.179','fake','true7102','fake');
 if($db && isset($_POST['submit']))
-{
-	$result=$db->query(" insert into BookShelf ( name , Description , auteur , editeur , owner , client ) values ( '{$_POST['name']}' , $'{_POST['Description']}' , '{$_POST['auteur']}' , '{$_SESSION['id']}' )");
-	$tmp_name = $_FILES['photo']['tmp_name'];
+{ 
+	$tmp_name = $_FILES['image']['tmp_name'];
     $file_name = time() . ".png";
     if (move_uploaded_file($tmp_name, $file_name)) {
-      $query = "INSERT INTO BookShelf (image) VALUE ('$file_name')";
-      mysqli_query($db, $query);
+			$result=$db->query("INSERT INTO BookShelf ( name , Description , auteur , editeur , owner  ,image ) VALUES( '{$_POST['name']}' , '{$_POST['Description']}' , '{$_POST['auteur']}' ,'{$_POST['editeur']}' ,'{$_SESSION['id']}'  ,'{$file_name}')");      
 	}
 }
 ?>
@@ -291,12 +289,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input type="text" value="" name="auteur" >
 						</div>
 						<div>
+							<div>
+							<span>Editeur</span>
+							<input type="text" value="" name="editeur" >
+						</div>
+						<div>
 							<span>Picture</span>
 							<input type="file" name="image" value="upload">
 
 						</div>
 						
-						<input type="submit" value="SEND" method="POST" >
+						<input type="submit" value="SEND" name="submit" >
 						</form>
 						<?php endif ?>
 						<p> <a href ="account.php">Log in</a> or <a href="register.php">Create an account </a></p>
