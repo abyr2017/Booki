@@ -2,7 +2,6 @@
   session_start();
     $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
 
-  $result = $db->query("SELECT asked_by,quest FROM questions");
     ?>
 <!DOCTYPE html>
 <html>
@@ -64,13 +63,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 					<div class="header-top-in">
 						<ul class="support">
-							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>info@example.com</a></li>
-							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>0 462 261 61 61</span></li>
+							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i><?php echo $_SESSION['name']; ?></a></li>
+
 						</ul>
 
 						<ul class=" support-right">
-							<li><a href="account.html"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a href="register.html"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
 						</ul>
 						<div class="clearfix"> </div>
 					</div>
