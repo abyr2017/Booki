@@ -62,12 +62,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!--header-->
-<div class="header-info">
-  <div class="container">
-      <div class="header-top-in">
-
-        <ul class="support">
-            <?php if (isset($_SESSION['name'])):?>
+		<div class="header-info">
+			<div class="container">
+					<div class="header-top-in">
+						<ul class="support">
+              <?php if (isset($_SESSION['name'])):?>
           <div class="dropdown">
 
           <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
@@ -79,19 +78,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
           </div>
           <?php endif ?>
-        </ul>
-        <ul class=" support-right">
-          <?php if (isset($_SESSION['name'])): ?>
-          <li><a href="logout.php"><i class="glyphicon glyphicon-user" class="men"> </i>LogOut</a></li>
-        <?php else: ?>
-            <li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-          <?php endif; ?>
-          <li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
-        </ul>
-        <div class="clearfix"> </div>
-      </div>
-    </div>
-  </div>
+
+
+
+						</ul>
+
+						<ul class=" support-right">
+							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
 <div class="header header5">
 	<div class="header-top">
 
@@ -106,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="top-nav">
 				<ul class="memenu skyblue">
-					<li class="active"><a href="index.html">Book Shelf</a></li>
+					<li class="active"><a href="index.html">BookShelf</a></li>
 					<li ><a href="#">Profile</a></li>
 				</ul>
 				<div class="clearfix"> </div>
@@ -264,35 +263,48 @@ $(window).load(function() {
 				<div class="clearfix"> </div>
 			</div>
 		</div>
+    <div class="bottom-grid1">
 
-	<div class="footer">
-		<div class="container">
+          <div class="fit1">
+            <h3>meet your next favourite book</h3>
+            <p>We are part of everything that we have read</p>
+          </div>
+        </div>
 
-			<div class="col-md-4 footer-bottom">
-				<h3>Get In Touch</h3>
-				<div class="logo-footer">
-					<ul class="social">
-		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="rss"></i></a></li>
-		                    <li><a href="#"><i class="twitter"></i></a></li>
-		                    <li><a href="#"><i class="dribble"></i></a></li>
-		                    <div class="clearfix"></div>
-		                </ul>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="indo">
-					<ul class="social-footer ">
-						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
-						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
-						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
-					</ul>
-					<a href="#"><img src="images/pa.png" alt=""></a>
-					</div>
-			</div>
-			<div class="clearfix"> </div>
-			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by Fake-W4I</p>
-		</div>
-	</div>
+    <!---->
+
+    <script src="js/simpleCart.min.js"> </script>
+    <!---->
+    <div class="footer ">
+  		<div class="container ">
+  			<div class="col-md-4">
+
+  			</div>
+
+  			<div class="col-md-4 footer-bottom text-center">
+  				<h3 class="text-center">Get In Touch</h3>
+  				<div class="logo-footer text-center">
+  					<ul class="social text-center">
+  		                    <li><a href="#"><i class="fb"> </i> </a></li>
+  		                    <li><a href="#"><i class="twitter"></i></a></li>
+
+  		                    <div class="clearfix"></div>
+  		                </ul>
+  					<div class="clearfix"> </div>
+  				</div>
+  				<div class="indo">
+  					<ul class="social-footer ">
+  						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
+  						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
+  						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
+  					</ul>
+  					<a href="#"><img src="images/pa.png" alt=""></a>
+  					</div>
+  			</div>
+  			<div class="clearfix"> </div>
+  			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I </p>
+  		</div>
+  	</div>
 				 <!---->
 <script type="text/javascript">
 		$(document).ready(function() {

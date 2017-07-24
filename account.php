@@ -115,8 +115,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <!---->
 		 <div class="top-nav">
 	 		<ul class="memenu skyblue">
-	 			<li class="active"><a href="index.html">Book Shelf</a></li>
-	 			<li ><a href="#">Profile</a></li>
+	 			<li ><a href="index.html">BookShelf</a></li>
+	 			<li ><a href="#">Add a book</a></li>
 	 		</ul>
 	 		<div class="clearfix"> </div>
 	 	</div>
@@ -137,7 +137,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<h2>Login</h2>
 </div>
 		<!---->
-		<div class="container">
+		<div class="container ">
 		<div class="account_grid">
 			   <div class=" login-right">
 			  	<h3>REGISTERED CUSTOMERS</h3>
@@ -168,24 +168,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="bottom-grid1">
 
 					<div class="fit1">
-						<h3>meet your next favourite book</h3>
+						<h3>Meet your next favourite book</h3>
 						<p>We are part of everything that we have read</p>
 					</div>
 				</div>
 <!---->
 	<!---->
-	<div class="footer">
-		<div class="container">
+	<div class="footer ">
+		<div class="container ">
+			<div class="col-md-4">
 
+			</div>
 
-			<div class="col-md-4 footer-bottom">
-				<h3>Get In Touch</h3>
-				<div class="logo-footer">
-					<ul class="social">
+			<div class="col-md-4 footer-bottom text-center">
+				<h3 class="text-center">Get In Touch</h3>
+				<div class="logo-footer text-center">
+					<ul class="social text-center">
 		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="rss"></i></a></li>
 		                    <li><a href="#"><i class="twitter"></i></a></li>
-		                    <li><a href="#"><i class="dribble"></i></a></li>
+
 		                    <div class="clearfix"></div>
 		                </ul>
 					<div class="clearfix"> </div>
