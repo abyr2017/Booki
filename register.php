@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_POST) {
   $db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
   $name=$_POST['name'];
@@ -8,6 +9,7 @@ if ($_POST) {
 
   $success = FALSE;
   if ($result) $success = TRUE;
+
 }
  ?>
 
@@ -74,18 +76,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--header-->
 		<div class="header-info">
 			<div class="container">
-					<div class="header-top-in">
+        <div class="header-top-in">
 
-						<ul class="support">
-							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>info@example.com</a></li>
-							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>0 462 261 61 61</span></li>
-						</ul>
-						<ul class=" support-right">
-							<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
-						</ul>
-						<div class="clearfix"> </div>
-					</div>
+          <ul class="support">
+              <?php if (isset($_SESSION['name'])):?>
+            <div class="dropdown">
+
+            <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
+
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <?php endif ?>
+          </ul>
+          <ul class=" support-right">
+            <?php if (isset($_SESSION['name'])): ?>
+            <li><a href="logout.php"><i class="glyphicon glyphicon-user" class="men"> </i>LogOut</a></li>
+          <?php else: ?>
+              <li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+            <?php endif; ?>
+            <li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+          </ul>
+          <div class="clearfix"> </div>
+        </div>
 				</div>
 			</div>
 <div class="header header5">
