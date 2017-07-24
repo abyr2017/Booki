@@ -1,9 +1,7 @@
-<!--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+$db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,11 +11,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="I-wear Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="I-wear Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -30,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start menu -->
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/memenu.js"></script>
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
+<script>$(document).ready(function(){$(".memenu").memenu();});</script>
 <!-- /start menu -->
 		  		 <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -39,33 +37,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <script src="js/bootstrap.js"></script>
 	<!-- js -->
 </head>
-<body> 
-<!--header-->	
-		<div class="header-info">
-			<div class="container">
-					<div class="header-top-in">
-						
-						<ul class="support">
-							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>info@example.com</a></li>
-							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>0 462 261 61 61</span></li>			
-						</ul>
-						<ul class=" support-right">
-							<li><a href="account.html"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a href="register.html"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
-						</ul>
-						<div class="clearfix"> </div>
+<body>
+<!--header-->
+<div class="header-info">
+	<div class="container">
+			<div class="header-top-in">
+
+				<ul class="support">
+						<?php if (isset($_SESSION['name'])):?>
+					<div class="dropdown">
+
+					<button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
+
+						<div class="dropdown-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
 					</div>
-				</div>
-			</div>	
+					<?php endif ?>
+				</ul>
+				<ul class=" support-right">
+					<?php if (isset($_SESSION['name'])): ?>
+					<li><a href="logout.php"><i class="glyphicon glyphicon-user" class="men"> </i>LogOut</a></li>
+				<?php else: ?>
+						<li><a href="account.php"><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
+					<?php endif; ?>
+					<li><a href="register.php"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
 <div class="header header5">
 	<div class="header-top">
 
 			<div class="header-bottom">
-			<div class="container">			
+			<div class="container">
 				<div class="logo">
 					<h1><a href="index.html">I-<span>wear</span></a></h1>
 				</div>
-		 
+
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li><a href="index.html">Home</a></li>
 					<li class="grid"><a href="#">Men</a>
@@ -93,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Kids</a></li>
 										<li><a href="product.html">Accessories</a></li>
 										<li><a href="product.html">Style Videos</a></li>
-									</ul>	
+									</ul>
 								</div>
 								<div class="col1 me-one">
 									<h4>Popular Brands</h4>
@@ -107,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Paul Smith</a></li>
 										<li><a href="product.html">Ray-Ban</a></li>
 										<li><a href="product.html">Wood Wood</a></li>
-									</ul>	
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -137,7 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Kids</a></li>
 										<li><a href="product.html">Accessories</a></li>
 										<li><a href="product.html">Style Videos</a></li>
-									</ul>	
+									</ul>
 								</div>
 								<div class="col1 me-one">
 									<h4>Popular Brands</h4>
@@ -151,7 +163,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Paul Smith</a></li>
 										<li><a href="product.html">Ray-Ban</a></li>
 										<li><a href="product.html">Wood Wood</a></li>
-									</ul>	
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -181,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Kids</a></li>
 										<li><a href="product.html">Accessories</a></li>
 										<li><a href="product.html">Style Videos</a></li>
-									</ul>	
+									</ul>
 								</div>
 								<div class="col1 me-one">
 									<h4>Popular Brands</h4>
@@ -195,16 +207,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="product.html">Paul Smith</a></li>
 										<li><a href="product.html">Ray-Ban</a></li>
 										<li><a href="product.html">Wood Wood</a></li>
-									</ul>	
+									</ul>
 								</div>
 							</div>
 						</div>
 					</li>
 					<li class="grid"><a href="typography.html">Typo</a>
-						
+
 					</li>
 					<li  class="active" class="grid"><a href="contact.html">Contact</a>
-						
+
 					</li>
 				</ul>
 				<div class="clearfix"> </div>
@@ -233,43 +245,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!---->
 		<div class="container">
 			<div class="contact">
-			
+
 				<div class=" contact-top-in">
 					<h3>View On Map</h3>
 					<div class="map">
 										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675115.8258740564!2d-98.4671417929578!3d34.91371150021706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1434956093308" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 					</div>
-					
+
 					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
 						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. </p>
-					
+
 				</div>
 				<div class=" contact-top">
 					<h3>Want to work with me?</h3>
 						<div>
-							<span>Your Name </span>		
-							<input type="text" value="" >						
+							<span>Your Name </span>
+							<input type="text" value="" >
 						</div>
 						<div>
-							<span>Your Email </span>		
-							<input type="text" value="" >						
+							<span>Your Email </span>
+							<input type="text" value="" >
 						</div>
 						<div>
-							<span>Subject</span>		
-							<input type="text" value="" >	
+							<span>Subject</span>
+							<input type="text" value="" >
 						</div>
 						<div>
-							<span>Your Message</span>		
-							<textarea> </textarea>	
+							<span>Your Message</span>
+							<textarea> </textarea>
 						</div>
-						<input type="submit" value="SEND" >	
+						<input type="submit" value="SEND" >
 				</div>
-		
+
 		</div>
 	</div>
 <div class="bottom-grid1">
-					
+
 					<div class="fit1">
 						<h3>HAPPY SHOPPING</h3>
 						<p>Lorem Ipsum sit amet consectuer adipiscing elit
@@ -282,17 +294,17 @@ sed diam nonummy nibh euismod</p>
 			<div class="col-md-4 footer-top">
 				<h3>Quick Contact</h3>
 				<form>
-						
+
 						<input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
-						
+
 						<input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
-						
+
 						<input type="text" value="ENTER YOUR PHONE" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
-					
+
 						<textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
-						
+
 							<input type="submit" value="SEND MESSAGE" >
-						
+
 					</form>
 
 			</div>
@@ -387,14 +399,14 @@ sed diam nonummy nibh euismod</p>
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 				*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
 });
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!----> 
+<!---->
 <!---->
 </body>
 </html>
