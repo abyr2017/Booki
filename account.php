@@ -110,13 +110,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="index.html"><img src="images/logo-01.png" alt=""></a></h1>
+					<h1><a href="index.php"><img src="images/logo-01.png" alt=""></a></h1>
 				</div>
 		 <!---->
 		 <div class="top-nav">
 	 		<ul class="memenu skyblue">
-	 			<li ><a href="index.html">BookShelf</a></li>
-	 			<li ><a href="#">Add a book</a></li>
+	 			<li ><a href="product.php">BookShelf</a></li>
+	 			<li ><a href="contact.php">Add a book</a></li>
 	 		</ul>
 	 		<div class="clearfix"> </div>
 	 	</div>
