@@ -9,6 +9,7 @@
 <html>
 <head>
 <title> Single :: w3layouts</title>
+<link href="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoadCss&layout=layout1" type="text/css" rel="stylesheet" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -225,6 +226,7 @@ $(window).load(function() {
                       echo '<div class="bookimg">'. $row["owner"] .'</div>' ;
                     ?>
 									</ul> <br>
+                  <script type="text/javascript" src="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoad&id=2&instance_id=0&layout=layout1"></script>
 
 								</div>
 							<div class="clearfix"> </div>
@@ -262,35 +264,48 @@ $(window).load(function() {
 				<div class="clearfix"> </div>
 			</div>
 		</div>
+    <div class="bottom-grid1">
 
-	<div class="footer">
-		<div class="container">
+          <div class="fit1">
+            <h3>meet your next favourite book</h3>
+            <p>We are part of everything that we have read</p>
+          </div>
+        </div>
 
-			<div class="col-md-4 footer-bottom">
-				<h3>Get In Touch</h3>
-				<div class="logo-footer">
-					<ul class="social">
-		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="rss"></i></a></li>
-		                    <li><a href="#"><i class="twitter"></i></a></li>
-		                    <li><a href="#"><i class="dribble"></i></a></li>
-		                    <div class="clearfix"></div>
-		                </ul>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="indo">
-					<ul class="social-footer ">
-						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
-						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
-						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
-					</ul>
-					<a href="#"><img src="images/pa.png" alt=""></a>
-					</div>
-			</div>
-			<div class="clearfix"> </div>
-			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by Fake-W4I</p>
-		</div>
-	</div>
+    <!---->
+
+    <script src="js/simpleCart.min.js"> </script>
+    <!---->
+    <div class="footer ">
+  		<div class="container ">
+  			<div class="col-md-4">
+
+  			</div>
+
+  			<div class="col-md-4 footer-bottom text-center">
+  				<h3 class="text-center">Get In Touch</h3>
+  				<div class="logo-footer text-center">
+  					<ul class="social text-center">
+  		                    <li><a href="#"><i class="fb"> </i> </a></li>
+  		                    <li><a href="#"><i class="twitter"></i></a></li>
+
+  		                    <div class="clearfix"></div>
+  		                </ul>
+  					<div class="clearfix"> </div>
+  				</div>
+  				<div class="indo">
+  					<ul class="social-footer ">
+  						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
+  						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
+  						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
+  					</ul>
+  					<a href="#"><img src="images/pa.png" alt=""></a>
+  					</div>
+  			</div>
+  			<div class="clearfix"> </div>
+  			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I </p>
+  		</div>
+  	</div>
 				 <!---->
 <script type="text/javascript">
 		$(document).ready(function() {
