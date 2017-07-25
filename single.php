@@ -9,14 +9,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 <title> Single :: w3layouts</title>
 
 <link rel="stylesheet" href="css/rating.css">
-=======
 <title> Book Details </title>
 <link href="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoadCss&layout=layout1" type="text/css" rel="stylesheet" />
->>>>>>> 61544efc2cda8ea232455fe7db4bee856f6a04a1
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -291,7 +288,7 @@ $(window).load(function() {
     						<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
     						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
     					</ul>
-    					
+
     					</div>
     			</div>
     			<div class="clearfix"> </div>
