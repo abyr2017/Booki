@@ -124,7 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="row">
 					<div class="col-md-3">
 						<div class="gif" style="line-break:break all">
-	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/8hY8FkKfcrux2/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8hY8FkKfcrux2/html5"></a></p>
+	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/128MHrlrHNwwU0/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/128MHrlrHNwwU0/html5"></a></p>
 						</div>
 					</div>
 
