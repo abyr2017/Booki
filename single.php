@@ -1,16 +1,22 @@
 <?php
   session_start();
     $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
-    $id = $_GET['id'];
+    $id = $_GET["id"];
     $result = $db->query("SELECT * FROM BookShelf where id=$id");
-    $row = $result->fetch_array();
+		$row = mysqli_fetch_array($result);
+
     ?>
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <title> Single :: w3layouts</title>
 
 <link rel="stylesheet" href="css/rating.css">
+=======
+<title> Book Details </title>
+<link href="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoadCss&layout=layout1" type="text/css" rel="stylesheet" />
+>>>>>>> 61544efc2cda8ea232455fe7db4bee856f6a04a1
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -73,11 +79,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
           <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
+           <?php
+							$range = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
+
+							echo"<div class='dropdown-content'>
+										<a href='#'>" . $range['Books given'] . " books given </a>
+										<a href='#'>" . $range['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $range['num carte'] . "</a>
+										</div>
+								 ";
+							?>
           </div>
           <?php endif ?>
         </ul>
@@ -99,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="index.html"><img src="images/logo-01.png" alt=""></a></h1>
+					<h1><a href="product.php"><img src="images/logo-01.png" alt=""></a></h1>
 				</div>
 
 
@@ -107,23 +118,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="top-nav">
 				<ul class="memenu skyblue">
-					<li class="active"><a href="index.html">BookShelf</a></li>
-					<li ><a href="#">Profile</a></li>
+					<li class="active"><a href="product.php">BookShelf</a></li>
+					<li ><a href="contact.php">Add a Book</a></li>
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
 					<!---->
-					<div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>
 
-<div class="clearfix"> </div>
 					<!---->
 				</div>
 
@@ -140,40 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!---->
 		<div class="product">
 			<div class="container">
-				<div class="col-md-3 product-price">
-
-				<div class=" rsidebar span_1_of_left">
-					<div class="of-left">
-						<h3 class="cate">CATEGORIES</h3>
-					</div>
-		 <ul class="menu">
-		<li class="item1"><a href="#"> Roman </a></li>
-		<li class="item2"><a href="#"> Encyclopedia </a></li>
-		<li class="item3"><a href="#">History</a></li>
-		<li class="item4"><a href="#">Business and Economy</a></li>
-		<li class="item4"><a href="#">Socialogy and Psychology</a></li>
-		 </ul>
-					</div>
-				<!--initiate accordion-->
-		<script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
-
-			});
-		</script>
+        <div class="col-md-2">
 
 				</div>
 				<!---->
@@ -292,7 +260,7 @@ $(window).load(function() {
     <div class="bottom-grid1">
 
           <div class="fit1">
-            <h3>meet your next favourite book</h3>
+            <h3>Meet your next favourite book</h3>
             <p>We are part of everything that we have read</p>
           </div>
         </div>
@@ -301,36 +269,35 @@ $(window).load(function() {
 
     <script src="js/simpleCart.min.js"> </script>
     <!---->
-    <div class="footer ">
-  		<div class="container ">
-  			<div class="col-md-4">
+    <div class="footer">
+    		<div class="container ">
+    			<div class="col-md-4">
 
-  			</div>
+    			</div>
 
-  			<div class="col-md-4 footer-bottom text-center">
-  				<h3 class="text-center">Get In Touch</h3>
-  				<div class="logo-footer text-center">
-  					<ul class="social text-center">
-  		                    <li><a href="#"><i class="fb"> </i> </a></li>
-  		                    <li><a href="#"><i class="twitter"></i></a></li>
+    			<div class="col-md-4 footer-bottom text-center">
+    				<h3 class="text-center">Get In Touch</h3>
+    				<div class="logo-footer text-center">
+    					<ul class="social text-center">
+    												<li><a href="https://www.facebook.com/booki2017/"><i class="fb"> </i> </a></li>
+    												<li><a href="https://twitter.com/Booki2017"><i class="twitter"></i></a></li>
 
-  		                    <div class="clearfix"></div>
-  		                </ul>
-  					<div class="clearfix"> </div>
-  				</div>
-  				<div class="indo">
-  					<ul class="social-footer ">
-  						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
-  						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
-  						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
-  					</ul>
-  					<a href="#"><img src="images/pa.png" alt=""></a>
-  					</div>
-  			</div>
-  			<div class="clearfix"> </div>
-  			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I </p>
-  		</div>
-  	</div>
+    												<div class="clearfix"></div>
+    										</ul>
+    					<div class="clearfix"> </div>
+    				</div>
+    				<div class="indo">
+    					<ul class="social-footer ">
+    						<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
+    						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
+    					</ul>
+    					
+    					</div>
+    			</div>
+    			<div class="clearfix"> </div>
+    			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I</p>
+    		</div>
+    	</div>
 				 <!---->
 <script type="text/javascript">
 		$(document).ready(function() {

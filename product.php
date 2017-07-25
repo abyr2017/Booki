@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+$db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
+?>
 
 <!--A Design by W3layouts
 Author: W3layout
@@ -9,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Product :: w3layouts</title>
+<title>Bookshelf</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -54,11 +56,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						<button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
-							<div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
+							<?php
+							$row = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
+
+							echo"<div class='dropdown-content'>
+										<a href='#'>" . $row['Books given'] . " books given </a>
+										<a href='#'>" . $row['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $row['num carte'] . "</a>
+										</div>
+								 ";
+							?>
+
 						</div>
 						<?php endif ?>
 					</ul>
@@ -94,17 +102,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 					<!---->
-					<div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>
 
-<div class="clearfix"> </div>
+
+
 					<!---->
 				</div>
 
@@ -116,46 +116,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <!---->
 <div class="back">
-	<h2>Produts</h2>
+	<h2>Books</h2>
 </div>
 		<!---->
 		<div class="product">
 			<div class="container">
-				<div class="col-md-3 product-price">
-
-				<div class=" rsidebar span_1_of_left">
-					<div class="of-left">
-						<h3 class="cate">CATEGORIES</h3>
-					</div>
-		 <ul class="menu">
-		<li class="item1"><a href="#">Men </a></li>
-		<li class="item2"><a href="#">Women </a></li>
-		<li class="item3"><a href="#">Kids</a></li>
-		<li class="item4"><a href="#">Accesories</a></li>
-		<li class="item4"><a href="#">Shoes</a></li>
-		</ul>
-					</div>
-				<!--initiate accordion-->
-		<script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
-
-			});
-		</script>
-
+				<div class="col-md-2">
 
 				</div>
 
@@ -186,7 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							if($db) {
 
-										$result = $db->query("SELECT * FROM BookShelf ORDER BY RAND() ");
+							$result = $db->query("SELECT * FROM BookShelf ORDER BY RAND() ");
 										}
 						 ?>
 <div class='product-right-top'>
@@ -293,20 +259,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3 class="text-center">Get In Touch</h3>
 				<div class="logo-footer text-center">
 					<ul class="social text-center">
-		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="twitter"></i></a></li>
+												<li><a href="https://www.facebook.com/booki2017/"><i class="fb"> </i> </a></li>
+												<li><a href="https://twitter.com/Booki2017"><i class="twitter"></i></a></li>
 
-		                    <div class="clearfix"></div>
-		                </ul>
+												<div class="clearfix"></div>
+										</ul>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="indo">
 					<ul class="social-footer ">
-						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
-						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
-						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
+						<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
+						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
 					</ul>
-					<a href="#"><img src="images/pa.png" alt=""></a>
+					
 					</div>
 			</div>
 			<div class="clearfix"> </div>
