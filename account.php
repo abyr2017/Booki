@@ -149,14 +149,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>If you have an account with us, please log in.</p>
 				<form action="account.php" method="post">
 				  <div>
-					<span>Email Address</span>
+					<span>User Name</span>
 					<input type="text" name="name">
 				  </div>
 				  <div>
 					<span>Password</span>
 					<input type="text" name="pass">
 				  </div>
-				  <a class="forgot" href="#">Forgot Your Password?</a>
+
 				  <input type="submit" name='submit' value="Login">
 			    </form>
 			   </div>
@@ -201,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
 							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
 						</ul>
-						
+
 						</div>
 				</div>
 				<div class="clearfix"> </div>
