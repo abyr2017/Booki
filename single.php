@@ -235,7 +235,7 @@ $(window).load(function() {
 				<div class="clearfix"> </div>
 			<!---->
 					<div class="cd-tabs">
-			<nav>
+			<nav>'
 				<ul class="cd-tabs-navigation">
 					<li><a data-content="fashion"  href="#0" class="selected ">Description </a></li>
 

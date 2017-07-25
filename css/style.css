@@ -4331,6 +4331,10 @@ li.ring-in img{
     text-decoration: none;
     display: block;
 }
+.not-active {
+   pointer-events: none;
+   opacity: 0.5;
+}
 
 .dropdown-content a:hover {background-color: #f16249; color: white;}
 
@@ -4344,4 +4348,7 @@ li.ring-in img{
 .gif {
 	margin-right: 50px;
 	margin-top: 200px;
+}
+.heart{
+	cursor: pointer;
 }

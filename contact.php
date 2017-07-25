@@ -121,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 <!---->
 <div class="back">
-	<h2>Share your Book !</h2>
+	<h2>Share you Book !</h2>
 </div>
 		<!---->
 		<div class="container">

@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -216,18 +216,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							
 							<div class='cart-add'>
 							
-								<a class='add1 item_ad' href='#' style='margin-bottom:5px'>My next on the list <i> </i></a>
-								<a class='add2' href='#'><i class='glyphicon glyphicon-heart-empt'> </i></a>
+								<a class='add1 item_ad book_list <?php if( $row['owner'] == $_SESSION['id'] ): ?> not-active <?php endif ?>'  book-id="<?=$row['id']?>" href='#' style='margin-bottom:5px' >My next on the list </a>
+
 								<div class='clearfix'> </div>
+								<?php
+								$res = $db->query("SELECT *  FROM favoris WHERE book_id ={$row['id']} and user_id = {$_SESSION['id']}");
+								if(mysqli_num_rows($res) <=0 )  :?>
+								
+								 <a><i class="fa fa-heart-o heart" book-id="<?=$row['id']?>" aria-hidden="true"></i></a>
+								
+								<?php else : ?>
+								<a><i class='fa fa-heart' style="color: red" aria-hidden='true'></i></a>
+								<?php endif ?>
+								
+								
 							</div>
-	   		     		</div>
-					<div class='clearfix'> </div>
+							</div>
+							<div class='clearfix'> </div>
 					
-	   		     	</div>
+					  	</div>
 					
 
 							<!--**************caution*************-->
-	<?php endwhile; ?>
+					<?php endwhile; ?>
 						 </div>
 						 </div>
 
@@ -316,9 +327,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		$("#sorting").on('change', function() {
 			window.location.href = "?sorting=" + $("#sorting").val();
-		})
+		});
 });
 </script>
+<script>
+                       $(document).ready(function () {
+                           $(".heart").click(function () {
+				var heart = $(this);
+                               $.post('favorits.php',{user_id : <?=$_SESSION['id']?>, book_id: $(this).attr("book-id")},function(d){
+                                   if(d>0)
+                                   {
+                                      // alert('this book is already on your favorits list');
+				      heart.attr("class","fa fa-heart");
+				      heart.css('color','red');
+
+                                   }else{
+                                       alert('an error has occured');
+                                   }
+                               });
+                           });
+                       });
+                   </script>
+<script>
+                       $(document).ready(function () {
+                           $(".book_list").click(function () {
+				
+                               $.post('addBook.php',{user_id : <?=$_SESSION['id']?>, book_id: $(this).attr("book-id")},function(d){
+					if(d > 0)
+					{
+						window.location = 'product.php';
+					}
+					else
+					{
+						alert('An error has occured');
+					}
+				});
+                           });
+                       });
+                   </script>
+
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </body>
 </html>
