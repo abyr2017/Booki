@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Register :: w3layouts</title>
+<title>Register</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -178,36 +178,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!---->
 	<!---->
-	<div class="footer">
-		<div class="container">
-      <div class="col-md-4">
+  <div class="footer">
+  		<div class="container ">
+  			<div class="col-md-4">
 
-			</div>
+  			</div>
 
-      <div class="col-md-4 footer-bottom text-center">
-				<h3 class="text-center">Get In Touch</h3>
-				<div class="logo-footer text-center">
-					<ul class="social text-center">
-		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="twitter"></i></a></li>
+  			<div class="col-md-4 footer-bottom text-center">
+  				<h3 class="text-center">Get In Touch</h3>
+  				<div class="logo-footer text-center">
+  					<ul class="social text-center">
+  												<li><a href="https://www.facebook.com/booki2017/"><i class="fb"> </i> </a></li>
+  												<li><a href="https://twitter.com/Booki2017"><i class="twitter"></i></a></li>
 
-		                    <div class="clearfix"></div>
-		                </ul>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="indo">
-					<ul class="social-footer ">
-						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
-						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
-						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
-					</ul>
-					<a href="#"><img src="images/pa.png" alt=""></a>
-					</div>
-			</div>
-			<div class="clearfix"> </div>
-			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I</p>
-		</div>
-	</div>
+  												<div class="clearfix"></div>
+  										</ul>
+  					<div class="clearfix"> </div>
+  				</div>
+  				<div class="indo">
+  					<ul class="social-footer ">
+  						<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
+  						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
+  					</ul>
+  					<a href="#"><img src="images/pa.png" alt=""></a>
+  					</div>
+  			</div>
+  			<div class="clearfix"> </div>
+  			<p class="footer-class">Copyrights © 2017 BOOKI. All rights reserved | Design by FAKE-W4I</p>
+  		</div>
+  	</div>
 				 <!---->
 <script type="text/javascript">
 		$(document).ready(function() {
