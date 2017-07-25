@@ -88,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="index.html"><img src="images/logo-01.png" alt=""></a></h1>
+					<h1><a href="product.php"><img src="images/logo-01.png" alt=""></a></h1>
 				</div>
 
 
@@ -96,8 +96,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="top-nav">
 				<ul class="memenu skyblue">
-					<li class="active"><a href="index.html" >BookShelf</a></li>
-					<li class="grid"><a href="contact.html">Add a book</a></li>
+					<li class="active"><a href="product.php" >BookShelf</a></li>
+					<li class="grid"><a href="contact.php">Add a book</a></li>
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
@@ -124,7 +124,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="row">
 					<div class="col-md-3">
 						<div class="gif" style="line-break:break all">
-	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/8hY8FkKfcrux2/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8hY8FkKfcrux2/html5"></a></p>
+	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/128MHrlrHNwwU0/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/128MHrlrHNwwU0/html5"></a></p>
 						</div>
 					</div>
 
