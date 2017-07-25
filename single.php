@@ -9,6 +9,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title> Single :: w3layouts</title>
+
+<link rel="stylesheet" href="css/rating.css">
 <title> Book Details </title>
 <link href="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoadCss&layout=layout1" type="text/css" rel="stylesheet" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -194,14 +197,38 @@ $(window).load(function() {
                       echo '<div class="bookimg">'. $row["owner"] .'</div>' ;
                     ?>
 									</ul> <br>
-                  <script type="text/javascript" src="http://demo.phpjabbers.com/1500908579_865/index.php?controller=pjFront&action=pjActionLoad&id=2&instance_id=0&layout=layout1"></script>
 
 								</div>
+
 							<div class="clearfix"> </div>
 							</div>
 
 
 								<a href="#" class="add-cart item_add">ADD TO CART</a>
+                <?php if (isset($_SESSION['name'])):?>
+                  <p><?php
+                  $result=$db->query("SELECT Avg(rate) AS Average,book_id FROM rate GROUP BY(book_id) ORDER BY(Average) DESC");
+                  while($row=$result->fetch_array())
+                  {
+                    echo 'Average Rating:'.round($row['Average']);
+                  }
+
+                  ?></p>
+                  <fieldset id='demo1' class="rating">
+                     <input class="stars" type="radio" id="star5" name="rating" value="5" />
+                     <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                     <input class="stars" type="radio" id="star4" name="rating" value="4" />
+                     <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                     <input class="stars" type="radio" id="star3" name="rating" value="3" />
+                     <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                     <input class="stars" type="radio" id="star2" name="rating" value="2" />
+                     <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                     <input class="stars" type="radio" id="star1" name="rating" value="1" />
+                     <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+
+                 </fieldset>
+
+              <?php endif ?>
 
 						</div>
 					</div>
@@ -288,6 +315,22 @@ $(window).load(function() {
 		$().UItoTop({ easingType: 'easeOutQuart' });
 });
 </script>
+<script>
+                       $(document).ready(function () {
+                           $("#demo1 .stars").click(function () {
+
+                               $.post('rating.php',{rate:$(this).val(), book_id: <?=$row['id']?>},function(d){
+                                   if(d>0)
+                                   {
+                                       alert('You already rated');
+                                   }else{
+                                       alert('Thanks For Rating');
+                                   }
+                               });
+                               $(this).attr("checked");
+                           });
+                       });
+                   </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!---->
 <!---->
