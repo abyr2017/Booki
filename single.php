@@ -1,9 +1,10 @@
 <?php
   session_start();
     $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
-    $id = $_SESSION['id'];
+    $id = $_GET["id"];
     $result = $db->query("SELECT * FROM BookShelf where id=$id");
-    $row = $result->fetch_array();
+		$row = mysqli_fetch_array($result);
+    
     ?>
 <!DOCTYPE html>
 <html>
@@ -73,12 +74,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
            <?php
-							$row = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
+							$range = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
 
 							echo"<div class='dropdown-content'>
-										<a href='#'>" . $row['Books given'] . " books given </a>
-										<a href='#'>" . $row['books token'] . " books taken</a>
-									  <a href='#'>  card number :" . $row['num carte'] . "</a>
+										<a href='#'>" . $range['Books given'] . " books given </a>
+										<a href='#'>" . $range['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $range['num carte'] . "</a>
 										</div>
 								 ";
 							?>
