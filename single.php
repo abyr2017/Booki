@@ -138,9 +138,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!---->
 		<div class="product">
 			<div class="container">
-        <div class="col-md-2">
+        <div class="row">
 
-				</div>
+
+        <div class="col-md-3">
+          <div class="gif" style="line-break:break all">
+            <iframe  id ="thisImg" src="https://giphy.com/gifs/8hY8FkKfcrux2/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8hY8FkKfcrux2/html5"></a></p>
+          </div>
+        </div>
 				<!---->
 				<div class="col-md-9 product-price1">
 				<div class="col-md-5 single-top">
@@ -253,6 +258,7 @@ $(window).load(function() {
 				</div>
 				<div class="clearfix"> </div>
 			</div>
+    </div>
 		</div>
     <div class="bottom-grid1">
 

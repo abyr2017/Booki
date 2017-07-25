@@ -121,9 +121,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!---->
 		<div class="product">
 			<div class="container">
-				<div class="col-md-2">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="gif" style="line-break:break all">
+	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/8hY8FkKfcrux2/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8hY8FkKfcrux2/html5"></a></p>
+						</div>
+					</div>
 
-				</div>
 
 
 			<!---->
@@ -225,6 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 				<div class="clearfix"> </div>
 				</div>
+			</div>
 
 			<div class="clearfix"> </div>
 <!--*******************-->
@@ -271,7 +276,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
 						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
 					</ul>
-					
+
 					</div>
 			</div>
 			<div class="clearfix"> </div>
