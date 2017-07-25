@@ -137,10 +137,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="mens-toolbar">
 						<p class="showing">Showing 1–9 of 21 results</p>
 	                 <div class="sort">
-			            <select>
-			                  <option value=""> Sorting By Rate</option>
-			                    <option value="">Sorting By Color </option>
-			                    <option value="">Sorting By Price </option>
+			            <select id="sorting">
+										<option  value="random">Sorting Random </option>
+			                <option value="rate"> Sorting By Rate</option>
+											<option value="name">Sorting By Name </option>
+			                <option value="author">Sorting By Author </option>
+			                 <option value="editor">Sorting By Publish House </option>
 			            </select>
 
 	    		     </div>
@@ -153,11 +155,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							$db = mysqli_connect('35.160.127.179','fake','true7102','fake');
 							/* mysqli_connect(sever,username,password,database)*/
 
+							$sorting = "random";
+							if (isset($_GET['sorting'])) {
+								$sorting = $_GET['sorting'];
+							}
+
 
 							if($db) {
+								switch ($sorting) {
+									case 'random':
+										$result = $db->query("SELECT * FROM BookShelf ORDER BY RAND() ");
+										break;
 
-							$result = $db->query("SELECT * FROM BookShelf ORDER BY RAND() ");
-										}
+									case 'rate':
+										$result = $db->query("SELECT bk.*, tab.avg FROM BookShelf as bk, (SELECT Avg(rate) as avg,book_id FROM rate group by book_id) as tab where bk.id=tab.book_id");
+										break;
+										case 'name':
+											$result = $db->query("SELECT * FROM BookShelf ORDER BY name ");
+											break;
+											case 'author':
+												$result = $db->query("SELECT * FROM BookShelf ORDER BY 	auteur ");
+												break;
+												case 'editor':
+													$result = $db->query("SELECT * FROM BookShelf ORDER BY 	editeur ");
+													break;
+								}
+							}
 						 ?>
 <div class='product-right-top'>
 	<div class='top-product'>
@@ -295,6 +318,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				};
 				*/
 		$().UItoTop({ easingType: 'easeOutQuart' });
+
+		$("#sorting").on('change', function() {
+			window.location.href = "?sorting=" + $("#sorting").val();
+		})
 });
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
