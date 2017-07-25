@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Bookshelf</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -116,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <!---->
 <div class="back">
-	<h2>Books</h2>
+	<h2>Available Books</h2>
 </div>
 		<!---->
 		<div class="product">
@@ -184,15 +185,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						 ?>
 <div class='product-right-top'>
 	<div class='top-product'>
-
-							<?php
-                while($row = mysqli_fetch_array($result)) {
-
-                  echo "
-
-		        		<div class='col-md-4 chain-grid  simpleCart_shelfIte'>
-		        			<div class='grid-span-1'
-	   		     		<a  href='single.html'><img class='img-responsive ' src= books_img/" . $row['image'] . "alt='" . $row['name'] ." '>
+		<?php while($row = mysqli_fetch_array($result)) : ?>
+			<div class='col-md-4 chain-grid  simpleCart_shelfIte'>
+		        	<div class='grid-span-1'
+	   		     		<a  href='single.html'><img class='img-responsive' style=' width:160px ; height:200px ' src='books_img/<?=$row['image']?>' alt='<?=$row['name']?>'>
 	   		     			<div class='link'>
 	   		     			<ul >
 										<li><i class='glyphicon glyphicon-search'> </i></li>
@@ -202,9 +198,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	   		     		</a>
 	   		     	</div>
 		  <div class='clearfix'> </div>
-		  <div class='grid-chain-bottom'>" .
-                          "<a href='single.html'>" . $row['name'] ."</a>" .
-                          "<div class='star-price'>
+		  <div class='grid-chain-bottom'>
+                          <a href='single.html'><?=$row['name']?></a>
+                          <div class='star-price'>
 	   		     				<div class='price-at'>
 		   		     				<ul class='star-footer'>
 										<li><a href='#'><i> </i></a></li>
@@ -217,20 +213,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									
 	   		     				<div class='clearfi'> </div>
 							</div>
+							
 							<div class='cart-add'>
+							
 								<a class='add1 item_ad' href='#' style='margin-bottom:5px'>My next on the list <i> </i></a>
 								<a class='add2' href='#'><i class='glyphicon glyphicon-heart-empt'> </i></a>
 								<div class='clearfix'> </div>
 							</div>
 	   		     		</div>
 					<div class='clearfix'> </div>
-
+					
 	   		     	</div>
+					
 
 							<!--**************caution*************-->
-		        	";
-             }
-						 ?>
+	<?php endwhile; ?>
 						 </div>
 						 </div>
 

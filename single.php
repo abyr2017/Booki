@@ -323,7 +323,7 @@ $(window).load(function() {
                                    if(d>0)
                                    {
                                        alert('You already rated');
-                                   }else{
+                                   }else{<
                                        alert('Thanks For Rating');
                                    }
                                });
