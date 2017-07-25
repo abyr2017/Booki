@@ -201,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
 							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
 						</ul>
-						<a href="#"><img src="images/pa.png" alt=""></a>
+						
 						</div>
 				</div>
 				<div class="clearfix"> </div>
