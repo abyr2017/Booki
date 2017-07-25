@@ -4,7 +4,7 @@
     $id = $_GET["id"];
     $result = $db->query("SELECT * FROM BookShelf where id=$id");
 		$row = mysqli_fetch_array($result);
-    
+
     ?>
 <!DOCTYPE html>
 <html>
@@ -118,17 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 			</div>
 					<!---->
-					<div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>
 
-<div class="clearfix"> </div>
 					<!---->
 				</div>
 
@@ -145,29 +135,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!---->
 		<div class="product">
 			<div class="container">
-				<div class="col-md-3 product-price">
-
-
-				<!--initiate accordion-->
-		<script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
-
-			});
-		</script>
+        <div class="col-md-2">
 
 				</div>
 				<!---->
