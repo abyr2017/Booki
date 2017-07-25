@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+$db= mysqli_connect('35.160.127.179:3306','fake','true7102','fake');
+?>
 
 <!--A Design by W3layouts
 Author: W3layout
@@ -54,11 +56,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						<button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
-							<div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							</div>
+							<?php
+							$row = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
+
+							echo"<div class='dropdown-content'>
+										<a href='#'>" . $row['Books given'] . " books given </a>
+										<a href='#'>" . $row['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $row['num carte'] . "</a>
+										</div>
+								 ";
+							?>
+							
 						</div>
 						<?php endif ?>
 					</ul>
@@ -80,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-bottom">
 			<div class="container">
 				<div class="logo">
-					<h1><a href="product.php"><img src="images/logo-01.png" alt=""></a></h1>
+					<h1><a href="index.html"><img src="images/logo-01.png" alt=""></a></h1>
 				</div>
 
 
@@ -88,8 +96,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="top-nav">
 				<ul class="memenu skyblue">
-					<li class="active"><a href="product.php" >BookShelf</a></li>
-					<li ><a href="contact.php">Add a book</a></li>
+					<li class="active"><a href="index.html" >BookShelf</a></li>
+					<li class="grid"><a href="contact.html">Add a book</a></li>
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
@@ -116,14 +124,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <!---->
 <div class="back">
-	<h2>Products</h2>
+	<h2>Produts</h2>
 </div>
 		<!---->
 		<div class="product">
 			<div class="container">
 				<div class="col-md-3 product-price">
 
-
+				<div class=" rsidebar span_1_of_left">
+					<div class="of-left">
+						<h3 class="cate">CATEGORIES</h3>
+					</div>
+		 <ul class="menu">
+		<li class="item1"><a href="#">Men </a></li>
+		<li class="item2"><a href="#">Women </a></li>
+		<li class="item3"><a href="#">Kids</a></li>
+		<li class="item4"><a href="#">Accesories</a></li>
+		<li class="item4"><a href="#">Shoes</a></li>
+		</ul>
+					</div>
 				<!--initiate accordion-->
 		<script type="text/javascript">
 			$(function() {
@@ -175,7 +194,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							if($db) {
 
-										$result = $db->query("SELECT * FROM BookShelf ORDER BY RAND() ");
+							$result = $db->query("SELECT * FROM BookShelf ORDER BY RAND() ");
 										}
 						 ?>
 <div class='product-right-top'>
@@ -263,7 +282,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="bottom-grid1">
 
 					<div class="fit1">
-						<h3>Meet your next favourite book</h3>
+						<h3>meet your next favourite book</h3>
 						<p>We are part of everything that we have read</p>
 					</div>
 				</div>

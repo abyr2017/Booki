@@ -84,11 +84,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							<button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
-								<div class="dropdown-content">
-									<a href="#">Link 1</a>
-									<a href="#">Link 2</a>
-									<a href="#">Link 3</a>
-								</div>
+								<?php
+							$row = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
+
+							echo"<div class='dropdown-content'>
+										<a href='#'>" . $row['Books given'] . " books given </a>
+										<a href='#'>" . $row['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $row['num carte'] . "</a>
+										</div>
+								 ";
+							?>
 							</div>
 							<?php endif ?>
 						</ul>
