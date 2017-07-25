@@ -169,7 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		        		<div class='col-md-4 chain-grid  simpleCart_shelfIte'>
 		        			<div class='grid-span-1'
-	   		     		<a  href='single.html'><img class='img-responsive ' src='images/n1.jpg' alt=' '>
+	   		     		<a  href='single.html'><img class='img-responsive ' src= books_img/" . $row['image'] . "alt='" . $row['name'] ." '>
 	   		     			<div class='link'>
 	   		     			<ul >
 										<li><i class='glyphicon glyphicon-search'> </i></li>
@@ -191,13 +191,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href='#'><i> </i></a></li>
 									</ul>
 									</div>
-									<div class='price-at-bottom '>
-										<span class='item_price'>this is wher you should add the price</span>
-									</div>
+									
 	   		     				<div class='clearfi'> </div>
 							</div>
 							<div class='cart-add'>
-								<a class='add1 item_ad' href='#' style='margin-bottom:5px'>ADD TO MY MY BOOKSHELF <i> </i></a>
+								<a class='add1 item_ad' href='#' style='margin-bottom:5px'>My next on the list <i> </i></a>
 								<a class='add2' href='#'><i class='glyphicon glyphicon-heart-empt'> </i></a>
 								<div class='clearfix'> </div>
 							</div>

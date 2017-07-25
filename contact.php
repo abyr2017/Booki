@@ -2,10 +2,14 @@
 session_start();
 $db= mysqli_connect('35.160.127.179','fake','true7102','fake');
 if($db && isset($_POST['submit']))
-{   $uploads_dir = '/books_img';
+{   $uploads_dir = 'books_img/';
 	$tmp_name = $_FILES['image']['tmp_name'];
-    $file_name = time() . ".png";
-    if (move_uploaded_file($tmp_name, $uploads_dir/$file_name)) {
+	
+    
+	
+    $file_name = time() . 'png';
+	
+    if (move_uploaded_file($tmp_name, $uploads_dir.$file_name)) {
 			$result=$db->query("INSERT INTO BookShelf ( name , Description , auteur , editeur , owner  ,image ) VALUES( '{$_POST['name']}' , '{$_POST['Description']}' , '{$_POST['auteur']}' ,'{$_POST['editeur']}' ,'{$_SESSION['id']}'  ,'{$file_name}')");
 	}
 }
@@ -117,23 +121,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 <!---->
 <div class="back">
-	<h2>Contact</h2>
+	<h2>Share your Book !</h2>
 </div>
 		<!---->
 		<div class="container">
 			<div class="contact">
 
-				<div class=" contact-top-in">
-					<h3>View On Map</h3>
-					<div class="map">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1675115.8258740564!2d-98.4671417929578!3d34.91371150021706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1434956093308" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-					</div>
-
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. </p>
-
-				</div>
+				
 				<div class=" contact-top">
 					<h3>Want to add a book to our bookshelf ?</h3>
 
