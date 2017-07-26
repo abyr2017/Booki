@@ -2,17 +2,29 @@
 session_start();
 $db= mysqli_connect('35.160.127.179','fake','true7102','fake');
 if($db && isset($_POST['submit']))
-{   $uploads_dir = 'books_img/';
+{
+	echo "we are inside";
+	$uploads_dir = 'books_img/';
 	$tmp_name = $_FILES['image']['tmp_name'];
 	
     
 	
     $file_name = time() . 'png';
 	
+	echo "we will upload";
     if (move_uploaded_file($tmp_name, $uploads_dir.$file_name)) {
+		echo "uploading done";
 			$result=$db->query("INSERT INTO BookShelf ( name , Description , auteur , editeur , owner  ,image ) VALUES( '{$_POST['name']}' , '{$_POST['Description']}' , '{$_POST['auteur']}' ,'{$_POST['editeur']}' ,'{$_SESSION['id']}'  ,'{$file_name}')");
+			if ($result) {
+				echo ":)";
+			} else echo ":/";
+			echo $db->error ;
+			
+	} else {
+		echo "error";
 	}
-}
+} else {echo "no submit";}
+echo "hi";
 ?>
 <!DOCTYPE html>
 <html>
@@ -121,7 +133,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 <!---->
 <div class="back">
-	<h2>Share you Book !</h2>
+	<h2>Share your book</h2>
 </div>
 		<!---->
 		<div class="container">
