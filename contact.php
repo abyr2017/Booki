@@ -6,12 +6,11 @@ if($db && isset($_POST['submit']))
 	echo "we are inside";
 	$uploads_dir = 'books_img/';
 	$tmp_name = $_FILES['image']['tmp_name'];
-	
-    
-	
+
+
+
     $file_name = time() . 'png';
-	
-	echo "we will upload";
+
     if (move_uploaded_file($tmp_name, $uploads_dir.$file_name)) {
 		echo "uploading done";
 			$result=$db->query("INSERT INTO BookShelf ( name , Description , auteur , editeur , owner  ,image ) VALUES( '{$_POST['name']}' , '{$_POST['Description']}' , '{$_POST['auteur']}' ,'{$_POST['editeur']}' ,'{$_SESSION['id']}'  ,'{$file_name}')");
@@ -115,17 +114,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="clearfix"> </div>
 				</div>
 					<!---->
-					<div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
-							<img src="images/cart.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>
 
-<div class="clearfix"> </div>
+
+
 					<!---->
 				</div>
 				</div>
@@ -139,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="contact">
 
-				
+
 				<div class=" contact-top">
 					<h3>Want to add a book to our bookshelf ?</h3>
 
@@ -207,7 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><span><i class="glyphicon glyphicon-earphone"> </i>+216 52 639 120 </span></li>
 						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info.booki.com@gmail.com</a></li>
 					</ul>
-					
+
 					</div>
 			</div>
 			<div class="clearfix"> </div>
