@@ -124,6 +124,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
+						
+							
+					<ul class="support">
+							<?php if (isset($_SESSION['name'])):?>
+						<div class="dropdown">
+
+						<button class="dropbtn"><li><a href="#"><i class="fa fa-star" style="color:yellow"></i>Show my favourite books</a></li></button>
+
+							<?php
+							$rest = $db->query("SELECT *  FROM favoris WHERE user_id = {$_SESSION['id']} ");
+							while($line = mysqli_fetch_array($rest))
+							{	$book_id = $line['book_id'] ;
+							        $table = $db->query("SELECT * FROM BookShelf WHERE id = $book_id ");
+								while($fav = mysqli_fetch_array($table))
+								
+									{
+										echo"<div class='dropdown-content'>
+										<li><a href='#'><i class='fa fa-book'></i>" . $fav['name'] . "</a></li>
+										
+										</div> ";
+									}
+								
+
+							}
+						
+							?>
+						
+
+						</div>
+						<?php endif ?>
+					</ul>
+							
+							
+						
 						<div class="gif" style="line-break:break all">
 	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/128MHrlrHNwwU0/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/128MHrlrHNwwU0/html5"></a></p>
 						</div>
