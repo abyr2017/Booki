@@ -58,12 +58,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<button class="dropbtn"><li><a href="#"><i class="glyphicon glyphicon-user"> </i><?php  echo $_SESSION['name']; ?></a></li></button>
 
 							<?php
-							$row = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
-
+							$range = mysqli_fetch_array($db->query("SELECT *  FROM Users WHERE id = '{$_SESSION['id']}' "));
 							echo"<div class='dropdown-content'>
-										<a href='#'>" . $row['Books given'] . " books given </a>
-										<a href='#'>" . $row['books token'] . " books taken</a>
-									  <a href='#'>  card number :" . $row['num carte'] . "</a>
+										<a href='#'>" . $range['Books given'] . " books given </a>
+										<a href='#'>" . $range['books token'] . " books taken</a>
+									  <a href='#'>  card number :" . $range['num carte'] . "</a>
 										</div>
 								 ";
 							?>
@@ -222,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<?php while($row = mysqli_fetch_array($result)) : ?>
 			<div class='col-md-4 chain-grid  simpleCart_shelfIte'>
 		        	<div class='grid-span-1'
-	   		     		<a  href='single.html'><img class='img-responsive' style=' width:160px ; height:200px ' src='books_img/<?=$row['image']?>' alt='<?=$row['name']?>'>
+	   		     		<a  href='single.php'><img class='img-responsive' style=' width:160px ; height:200px ' src='books_img/<?=$row['image']?>' alt='<?=$row['name']?>'>
 	   		     			<div class='link'>
 	   		     			<ul >
 										<li><i class='glyphicon glyphicon-search'> </i></li>
@@ -233,7 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	   		     	</div>
 		  <div class='clearfix'> </div>
 		  <div class='grid-chain-bottom'>
-                          <a href='single.html'><?=$row['name']?></a>
+                          <a href="single.php?id=<?php echo $row['id'];?>"><?=$row['name']?></a>
                           <div class='star-price'>
 	   		     				<div class='price-at'>
 		   		     				<ul class='star-footer'>
@@ -249,7 +248,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							
 							<div class='cart-add'>
-							
+							         <?php if (isset($_SESSION['name'])): ?>
 								<a class='add1 item_ad book_list <?php if( $row['owner'] == $_SESSION['id'] ): ?> not-active <?php endif ?>'  book-id="<?=$row['id']?>" href='#' style='margin-bottom:5px' >My next on the list </a>
 
 								<div class='clearfix'> </div>
@@ -262,6 +261,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<?php else : ?>
 								<a><i class='fa fa-heart' style="color: red" aria-hidden='true'></i></a>
 								<?php endif ?>
+								<?php endif ?>
+								
 								
 								
 							</div>

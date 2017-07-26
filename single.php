@@ -142,17 +142,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
         <div class="col-md-3">
-          <div class="gif" style="line-break:break all">
-            <iframe  id ="thisImg" src="https://giphy.com/gifs/128MHrlrHNwwU0/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/128MHrlrHNwwU0/html5"></a></p>
-          </div>
+          
         </div>
 				<!---->
 				<div class="col-md-9 product-price1">
 				<div class="col-md-5 single-top">
-          <?php
-            echo '<div class="bookimg">'. $row["image"] .'</div>' ;
+          
+            <div class="bookimg"> <img src="books_img/<?=$row['image']?>" /></div>
 
-          ?>
+        
 
 
 
@@ -192,11 +190,7 @@ $(window).load(function() {
                       echo '<div class="bookimg">'. $row["editeur"] .'</div>' ;
                     ?>
 									</ul> <br>
-                  <ul> owner:
-                    <?php
-                      echo '<div class="bookimg">'. $row["owner"] .'</div>' ;
-                    ?>
-									</ul> <br>
+                  
 
 								</div>
 
@@ -204,7 +198,7 @@ $(window).load(function() {
 							</div>
 
 
-								<a href="#" class="add-cart item_add">ADD TO CART</a>
+								
                 <?php if (isset($_SESSION['name'])):?>
                   <p><?php
                   $result=$db->query("SELECT Avg(rate) AS Average,book_id FROM rate GROUP BY(book_id) ORDER BY(Average) DESC");
