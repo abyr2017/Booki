@@ -124,8 +124,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						
-							
+
+
 					<ul class="support">
 							<?php if (isset($_SESSION['name'])):?>
 						<div class="dropdown">
@@ -138,29 +138,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							{	$book_id = $line['book_id'] ;
 							        $table = $db->query("SELECT * FROM BookShelf WHERE id = $book_id ");
 								while($fav = mysqli_fetch_array($table))
-								
+
 									{
 										echo"<div class='dropdown-content'>
 										<li><a href='#'><i class='fa fa-book'></i>" . $fav['name'] . "</a></li>
-										
+
 										</div> ";
 									}
-								
+
 
 							}
-						
+
 							?>
-						
+
 
 						</div>
 						<?php endif ?>
 					</ul>
-							
-							
-						
-						<div class="gif" style="line-break:break all">
-	  					<iframe  id ="thisImg" src="https://giphy.com/gifs/128MHrlrHNwwU0/html5" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/128MHrlrHNwwU0/html5"></a></p>
-						</div>
+
+
+
+
 					</div>
 
 
@@ -170,7 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!---->
 				<div class="col-md-9 product-price1">
 					<div class="mens-toolbar">
-						<p class="showing">Showing 1–9 of 21 results</p>
+
 	                 <div class="sort">
 			            <select id="sorting">
 										<option  value="random">Sorting Random </option>
@@ -244,32 +242,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href='#'><i> </i></a></li>
 									</ul>
 									</div>
-									
+
 	   		     				<div class='clearfi'> </div>
 							</div>
-							
+
 							<div class='cart-add'>
-							
+
 								<a class='add1 item_ad book_list <?php if( $row['owner'] == $_SESSION['id'] ): ?> not-active <?php endif ?>'  book-id="<?=$row['id']?>" href='#' style='margin-bottom:5px' >My next on the list </a>
 
 								<div class='clearfix'> </div>
 								<?php
 								$res = $db->query("SELECT *  FROM favoris WHERE book_id ={$row['id']} and user_id = {$_SESSION['id']}");
 								if(mysqli_num_rows($res) <=0 )  :?>
-								
+
 								 <a><i class="fa fa-heart-o heart" book-id="<?=$row['id']?>" aria-hidden="true"></i></a>
-								
+
 								<?php else : ?>
 								<a><i class='fa fa-heart' style="color: red" aria-hidden='true'></i></a>
 								<?php endif ?>
-								
-								
+
+
 							</div>
 							</div>
 							<div class='clearfix'> </div>
-					
+
 					  	</div>
-					
+
 
 							<!--**************caution*************-->
 					<?php endwhile; ?>
@@ -281,15 +279,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class='clearfix'> </div>
 
 
-		        <ul class="start">
-					<li><a href="#"><i> </i></a></li>
-					<li><span>1</span></li>
-					<li class="arrow"><a href="#">2</a></li>
-					<li class="arrow"><a href="#">3</a></li>
-
-
-					<li><a href="#"><i class="next"> </i></a></li>
-				</ul>
+		        
 				<div class="clearfix"> </div>
 				</div>
 			</div>
@@ -385,7 +375,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
                        $(document).ready(function () {
                            $(".book_list").click(function () {
-				
+
                                $.post('addBook.php',{user_id : <?=$_SESSION['id']?>, book_id: $(this).attr("book-id")},function(d){
 					if(d > 0)
 					{
